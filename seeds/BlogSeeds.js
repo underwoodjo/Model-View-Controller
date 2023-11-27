@@ -2,24 +2,24 @@ const { Blog } = require('../models');
 
 const blogdata = [
   {
-    title: 'Printemps',
+    title: 'The Art of Decorating Cakes',
     content: 'April 20, 2021 07:00:00',
-    user: 'userhere',
+    user: 'user1',
   },
   {
-    title: 'Sommer',
+    title: 'The Art of Baking Cookies',
     content: 'June 22, 2021 09:00:00',
-    user: 'September 22, 2021 22:00:00',
+    user: 'user2',
   },
   {
-    title: 'Herfst',
+    title: 'The Art of ',
     content: 'September 23, 2021 08:30:00',
-    user: 'December 21, 2021 20:30:00',
+    user: 'user3',
   },
   {
     title: 'Invierno',
     content: 'December 22, 2020 11:00:00',
-    user: 'March 19, 2021 19:00:00',
+    user: 'user4',
   },
 ];
 

@@ -1,32 +1,29 @@
-const { Tag } = require('../models');
+const { User } = require('../models');
 
-const tagData = [
+const userData = [
   {
-    tag_name: 'rock music',
+    username: 'user1',
+    email: 'user1@gmail.com',
+    password: 'user1password'
   },
   {
-    tag_name: 'pop music',
+    username: 'user2',
+    email: 'user2@gmail.com', 
+    password: 'user2password',
   },
   {
-    tag_name: 'blue',
+    username: 'user3',
+    email: 'user3@gmail.com',
+    password: 'user3password',
   },
   {
-    tag_name: 'red',
+    username: 'user4',
+    email: 'user4@gmail.com',
+    password: 'user4password',
   },
-  {
-    tag_name: 'green',
-  },
-  {
-    tag_name: 'white',
-  },
-  {
-    tag_name: 'gold',
-  },
-  {
-    tag_name: 'pop culture',
-  },
+ 
 ];
 
-const seedTags = () => Tag.bulkCreate(tagData);
+const seedUser = () => User.bulkCreate(userData);
 
-module.exports = seedTags;
+module.exports = seedUser;
