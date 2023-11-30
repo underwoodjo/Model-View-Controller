@@ -29,21 +29,12 @@ const Comment = require('./Comment');
     };
     
 
-
-
-
-
-
-
-
-
-
-Gallery.hasMany(Painting, {
-  foreignKey: 'gallery_id',
+Blog.hasMany(Comment, {
+  foreignKey: 'blog_id',
 });
 
-Painting.belongsTo(Gallery, {
-  foreignKey: 'gallery_id',
+Comment.belongsTo(Blog, {
+  foreignKey: 'blog_id',
 });
 
-module.exports = { User, Gallery, Painting };
+module.exports = { User, Blog, Comment };
