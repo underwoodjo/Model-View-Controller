@@ -37,14 +37,7 @@ router.get('/blog/:id', withAuth, async (req, res) => {
       include: [
         {
           model: Comment,
-          attributes: [
-            'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
-          ],
+          attributes: ['id','title', 'content', 'user_id'],
         },
       ],
     });
